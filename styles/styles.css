@@ -1,1 +1,13 @@
+*{
+    box-sizing: border-box;
+}
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fafafa;
+}
+
+ li a {
+    padding: 1em;
+}
