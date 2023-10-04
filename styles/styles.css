@@ -53,13 +53,15 @@ li a {
 }
 
 h2 {
-    
+    display: flex;
+    justify-content: center;
     font-family: "Gabarito", cursive;
 }
 
 main {
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 article {
@@ -67,10 +69,11 @@ article {
     background-color: #AEDBAB;
     padding: 1.5em; 
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 p {
