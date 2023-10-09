@@ -156,8 +156,26 @@ figure img {
   font-size: 0.7em;
 }
 
-.testimonials {}
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #AEDBAB;
+}
 
+.snippet {
+  border-radius: 25px 250px 250px 250px;
+  width: 400px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #242424;
+  border: 3px solid #44686F;
+  background-color: #7faec5;
+}
+
+.snippet > p {
+translate: 110px;
+}
 
 /* mobiel formaaat website */
 @media only screen and (max-width: 600px) {}
