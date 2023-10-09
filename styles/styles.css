@@ -156,6 +156,8 @@ figure img {
   font-size: 0.7em;
 }
 
+.testimonials {}
+
 
 /* mobiel formaaat website */
 @media only screen and (max-width: 600px) {}
