@@ -11,6 +11,7 @@ body {
   margin: 0;
   height: 100%;
 }
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -19,11 +20,10 @@ nav {
   background-color: #dddddd;
   font-family: "Work Sans", sans-serif;
   align-items: center;
-
 }
 
 nav img {
-  width: 325px;
+  width: 195px;
   margin: 0.8em;
 }
 
@@ -279,14 +279,12 @@ input[type=submit]:hover {
 
 .example-form {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
 } 
-
-
 
 footer {
   height: 165px;
@@ -575,7 +573,7 @@ input[type=submit]:hover {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
 } 
 
 }
