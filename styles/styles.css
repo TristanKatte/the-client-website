@@ -23,7 +23,8 @@ nav {
 }
 
 nav img {
-  width: 375px;
+  width: 325px;
+  margin: 0.8em;
 }
 
 nav ul {
@@ -37,7 +38,7 @@ li a {
   text-decoration: none;
   list-style-type: none;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   font-size: 1.2em;
 }
 
@@ -80,7 +81,7 @@ li a {
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../assets/header-image.jpg");
-  height: 95%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,7 +98,6 @@ li a {
   font-size: 7em;
   /* font-family: "Audiowide", cursive; */
   font-family: "Gabarito", cursive;
-  /* font-family: "Work Sans", sans-serif; */
 }
 
 h2,h3,h4,h5 {
@@ -152,6 +152,7 @@ section {
 p {
     margin: auto;
     font-family: "Work Sans", sans-serif;
+    padding-bottom: 1.5em;
     
     
 }
@@ -160,6 +161,7 @@ figure {
     border-radius: 25px 250px 250px 250px;
     width: 400px;
     height: 400px;
+    margin-top: 1.5em;
     
 }
 
@@ -210,46 +212,79 @@ figure img {
 
 .snippet {
   border-radius: 25px 250px 250px 250px;
-  width: 400px;
+  width: 300px;
+  height: 300px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   color: #242424;
   border: 3px solid #44686F;
   background-color: #7faec5;
 }
 
+blockquote > p {
+  translate: 10px 80px;
+}
+
 form {
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  width: 80%;
-}
-
-form.form-example {
-  display: flex;
-}
-
-div.form-example {
-  display: flex;
-  flex-direction: row;
-}
-
-label,
-input {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-label {
-  padding-right: 10px;
-}
-
-.contact {
-  display: flex;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Work Sans", sans-serif;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email] , select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #7faec5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #44686f;
+}
+
+.example-form {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-}
+  width: 50%;
+} 
 
 
 
@@ -258,10 +293,6 @@ footer {
   width: 100%;
   background-color: #44686F;
 }
-
-
-
-
 
 /* mobiel formaaat website */
 @media only screen and (max-width: 600px) {
@@ -307,6 +338,7 @@ footer {
 
   }
 
+  /* de volgende stukken css zorgen voor een mobiele navigatie die "sticky" is */
   .topnav {
     overflow: hidden;
     background-color: #44686f;
@@ -330,7 +362,7 @@ footer {
   }
   
   .topnav a.icon {
-    background: black;
+    background: #7faec5;
     display: block;
     position: absolute;
     right: 0;
@@ -347,10 +379,11 @@ footer {
     color: white;
   }
 
+/* De hero-afbeelding die ook op mobiel formaat het eerste gedeelte van de website inneemt */
   .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../assets/header-image.jpg");
-    height: 45%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -362,7 +395,7 @@ footer {
     position: absolute;
     top: 25%;
     right: 10%;
-    transform: translate(10%, 110px);
+    transform: translate(10%, 200px);
     color: white;
     font-size: 3em;
     /* font-family: "Audiowide", cursive; */
@@ -391,6 +424,7 @@ main {
     
 }
 
+/* zorgt ervoor dat alle conten gestapeld is op mobiel formaat */
 article {
     line-height: 2;
     background-color: #fff;
@@ -422,21 +456,13 @@ section {
 p {
     margin: auto;
     font-family: "Work Sans", sans-serif;
-    
-    
+    max-width: 30em; 
 }
-
-/* figure {
-    border-radius: 25px 250px 250px 250px;
-    width: 400px;
-    height: 400px;
-    
-} */
 
 figure img {
     border-radius: 25px 250px 250px 250px;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 
 .article-grid  {
@@ -480,19 +506,76 @@ figure img {
 
 .snippet {
   border-radius: 25px 250px 250px 250px;
-  width: 400px;
+  width: 200px;
+  height: 200px;
+  margin: 1em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   color: #242424;
   border: 3px solid #44686F;
   background-color: #7faec5;
+  font-size: 0.8em;
 }
 
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Work Sans", sans-serif;
+}
 
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
+input[type=email] , select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
+input[type=submit] {
+  width: 100%;
+  background-color: #7faec5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
+input[type=submit]:hover {
+  background-color: #44686f;
+}
 
-
+.example-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+} 
 
 }
