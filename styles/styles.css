@@ -418,8 +418,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 
 /* zorgt ervoor dat alle conten gestapeld is op mobiel formaat */
