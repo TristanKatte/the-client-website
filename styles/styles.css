@@ -43,7 +43,7 @@ li a {
 
 .topnav {
   overflow: hidden;
-  background-color: #44686f;
+  background-color: #ececec;
   position: relative;
   position: fixed;
   top: 0;
@@ -53,7 +53,7 @@ li a {
 
 
 .topnav a {
-  color: white;
+  color: #7faec5;
   text-decoration: none;
 }
 
@@ -74,6 +74,7 @@ li a {
 .active {
   background-color: #7faec5;
   color: white;
+  
 }
 
 .hero-image {
@@ -288,7 +289,7 @@ footer {
 }
 
 /*formaat op tablet*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   * {
     box-sizing: border-box;
     margin: 0;
@@ -303,19 +304,16 @@ footer {
     background-color: #dddddd;
     font-family: "Work Sans", sans-serif;
     align-items: center;
-    position: fixed;
-    top: 0;
-    
   }
   
   nav img {
-    width: 155px;
+    width: 195px;
+    margin: 0.8em;
   }
   
   nav ul {
       list-style-type: none;
       display: flex;
-      overflow: hidden;
   }
   
   li a {
@@ -323,16 +321,13 @@ footer {
     text-decoration: none;
     list-style-type: none;
     flex-direction: row;
-    align-items: flex-end;
-    font-size: 0.95em;
-    display: block;
-
+    align-items: center;
+    font-size: 1.2em;
   }
-
-  /* de volgende stukken css zorgen voor een mobiele navigatie die "sticky" is */
+  
   .topnav {
     overflow: hidden;
-    background-color: #44686f;
+    background-color: #ececec;
     position: relative;
     position: fixed;
     top: 0;
@@ -340,24 +335,19 @@ footer {
     z-index: 1;
   }
   
-  .topnav #myLinks {
-    display: none;
-  }
   
   .topnav a {
     color: white;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-    display: block;
   }
   
   .topnav a.icon {
-    background: #7faec5;
+    background: black;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
+    display: none;
   }
   
   .topnav a:hover {
@@ -620,7 +610,7 @@ footer {
   /* de volgende stukken css zorgen voor een mobiele navigatie die "sticky" is */
   .topnav {
     overflow: hidden;
-    background-color: #44686f;
+    background-color: #ececec;
     position: relative;
     position: fixed;
     top: 0;
@@ -633,7 +623,7 @@ footer {
   }
   
   .topnav a {
-    color: white;
+    color: #7faec5;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
